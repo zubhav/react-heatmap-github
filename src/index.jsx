@@ -17,13 +17,15 @@ export function Heatmap({ values }) {
                     return (
                     <ul className="col">
                         {cols.map(val => {
-                            let classNames = "square "
+                            const classes = ["square"]
 
                             if(val === 1) {
-                                classNames += "active"
+                                classes.push("active")
                             } else {
-                                classNames += "idle"
+                                classes.push("idle")
                             }
+
+                            let classNames = classes.join(" ")
 
                             return <li className={classNames}></li>
                         })}

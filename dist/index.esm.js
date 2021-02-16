@@ -27,7 +27,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".chart {\n  position: relative; }\n\n.row {\n  list-style-type: none;\n  display: flex;\n  flex-direction: row;\n  padding: 0;\n  margin: 0; }\n\n.col {\n  list-style-type: none;\n  display: flex;\n  flex-direction: column;\n  padding: 0 3px 0 0; }\n\n.square {\n  width: 10px;\n  height: 10px;\n  border-radius: 3px;\n  margin-bottom: 3px;\n  box-sizing: border-box; }\n\n.idle {\n  background-color: #ebedf0;\n  border: 1px solid #dfe1e4; }\n\n.active {\n  background-color: #9be9a8; }\n";
+var css_248z = ".chart {\n  position: relative;\n}\n\n.row {\n  list-style-type: none;\n  display: flex;\n  flex-direction: row;\n  padding: 0;\n  margin: 0;\n}\n\n.col {\n  list-style-type: none;\n  display: flex;\n  flex-direction: column;\n  padding: 0 3px 0 0;\n}\n\n.square {\n  width: 10px;\n  height: 10px;\n  border-radius: 3px;\n  margin-bottom: 3px;\n  box-sizing: border-box;\n}\n\n.idle {\n  background-color: #ebedf0;\n  border: 1px solid #dfe1e4;\n}\n\n.active {\n  background-color: #9be9a8;\n}";
 styleInject(css_248z);
 
 function Heatmap(_ref) {
@@ -48,14 +48,15 @@ function Heatmap(_ref) {
     return /*#__PURE__*/React.createElement("ul", {
       className: "col"
     }, cols.map(function (val) {
-      var classNames = "square ";
+      var classes = ["square"];
 
       if (val === 1) {
-        classNames += "active";
+        classes.push("active");
       } else {
-        classNames += "idle";
+        classes.push("idle");
       }
 
+      var classNames = classes.join(" ");
       return /*#__PURE__*/React.createElement("li", {
         className: classNames
       });
