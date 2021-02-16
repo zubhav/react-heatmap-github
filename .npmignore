@@ -5,13 +5,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Ignore top-level built files
-/*.js
-/*.json
-/commands
-/helpers
-/traversal
-
 # Runtime data
 pids
 *.pid

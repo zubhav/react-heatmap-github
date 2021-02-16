@@ -1,0 +1,35 @@
+.chart {
+  position: relative;
+}
+
+.row {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.col {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3px 0 0;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+
+.idle {
+  background-color: #ebedf0;
+  border: 1px solid #dfe1e4;
+}
+
+.active {
+  background-color: #9be9a8;
+}
