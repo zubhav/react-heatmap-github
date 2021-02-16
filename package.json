@@ -1,0 +1,65 @@
+{
+  "name": "react-heatmap-github",
+  "version": "0.3.1",
+  "description": "React component for Github contribution heatmaps",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "source": "src/index.jsx",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build-watch": "rollup -c -w",
+    "start-playground": "cd playground && npm run start",
+    "i-all": "npm i && cd playground && npm i",
+    "dev": "npm-run-all --parallel build-watch start-playground"
+  },
+  "keywords": [
+    "react",
+    "github",
+    "heatmap",
+    "calendar",
+    "contribution"
+  ],
+  "author": "zubhav",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-babel": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.6",
+    "rollup": "^2.26.4",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-postcss": "^4.0.0",
+    "sass": "^1.32.7"
+  },
+  "peerDependencies": {
+    "react": ">= 16.0.0",
+    "react-dom": ">= 16.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zubhav/react-heatmap-github.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zubhav/react-heatmap-github/issues"
+  },
+  "homepage": "https://github.com/zubhav/react-heatmap-github#readme"
+}
