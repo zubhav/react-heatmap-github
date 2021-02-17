@@ -12,27 +12,20 @@ export function Heatmap({ values }) {
 
     return (
         <div className="chart">
-            <ul className="row">
-                {rows.map(cols => {
+            <svg width={values.length * 2 + 10} height={88}>
+                {rows.map((cols, rowIdx) => {
                     return (
-                    <ul className="col">
-                        {cols.map(val => {
-                            const classes = ["square"]
+                        <g transform={`translate(${rowIdx * 14}, 0)`}>
+                            {cols.map((val, colIdx) => {
+                                const classes = ["square", `green-${val}`]
+                                let classNames = classes.join(" ")
 
-                            if(val === 1) {
-                                classes.push("active")
-                            } else {
-                                classes.push("idle")
-                            }
-
-                            let classNames = classes.join(" ")
-
-                            return <li className={classNames}></li>
-                        })}
-                    </ul>
+                                return <rect width="10" height="10" x="0" y={`${colIdx * 13}`} className={classNames} rx="2" ry="2"></rect>
+                            })}
+                        </g>
                     )
                 })}
-            </ul>
+            </svg>
         </div>
     );
 }

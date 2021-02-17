@@ -20,7 +20,11 @@ npm install react-heatmap-github
 ```sh
 import { Heatmap } from 'react-heatmap-github'
 
-<Heatmap values={[1, 0, 1, 1, 0]} />
+<Heatmap values={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]} />
+
+let randomData = new Array(364).fill(null).map(() => Math.floor(Math.random()*(9+1)))
+
+<Heatmap values={randomData} />
 ```
 
 ## Author
@@ -34,10 +38,6 @@ import { Heatmap } from 'react-heatmap-github'
 Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/zubhav/react-heatmap-github/issues). You can also take a look at the [contributing guide](https://github.com/zubhav/react-heatmap-github/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
