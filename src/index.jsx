@@ -11,13 +11,13 @@ export function Heatmap({ values }) {
     }
 
     return (
-        <div className="chart">
+        <div className="react-heatmap-github-chart">
             <svg width={values.length * 2 + 10} height={88}>
                 {rows.map((cols, rowIdx) => {
                     return (
                         <g transform={`translate(${rowIdx * 14}, 0)`}>
                             {cols.map((val, colIdx) => {
-                                const classes = ["square", `green-${val}`]
+                                const classes = ["react-heatmap-github-chart-square", `react-heatmap-github-chart-green-${val}`]
                                 let classNames = classes.join(" ")
 
                                 return <rect width="10" height="10" x="0" y={`${colIdx * 13}`} className={classNames} rx="2" ry="2"></rect>

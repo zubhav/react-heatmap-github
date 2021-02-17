@@ -1,38 +1,37 @@
-.chart {
+.react-heatmap-github-chart {
   position: relative;
-}
 
-.square {
-  fill: #ebedf0;
-}
-
-.green-0 {
-  fill: #f0fff4;
-}
-.green-1 {
-  fill: #dcffe4;
-}
-.green-2 {
-  fill: #bef5cb;
-}
-.green-3 {
-  fill: #85e89d;
-}
-.green-4 {
-  fill: #34d058;
-}
-.green-5 {
-  fill: #28a745;
-}
-.green-6 {
-  fill: #22863a;
-}
-.green-7 {
-  fill: #176f2c;
-}
-.green-8 {
-  fill: #165c26;
-}
-.green-9 {
-  fill: #144620;
+  &-square {
+    fill: #ebedf0;
+  }
+  &-green-0 {
+    fill: #f0fff4;
+  }
+  &-green-1 {
+    fill: #dcffe4;
+  }
+  &-green-2 {
+    fill: #bef5cb;
+  }
+  &-green-3 {
+    fill: #85e89d;
+  }
+  &-green-4 {
+    fill: #34d058;
+  }
+  &-green-5 {
+    fill: #28a745;
+  }
+  &-green-6 {
+    fill: #22863a;
+  }
+  &-green-7 {
+    fill: #176f2c;
+  }
+  &-green-8 {
+    fill: #165c26;
+  }
+  &-green-9 {
+    fill: #144620;
+  }
 }
